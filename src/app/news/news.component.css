@@ -1,0 +1,420 @@
+
+.defaultStyle{
+  font-size:28px;
+  text-shadow: 0 0 12px blue;
+}
+    
+    /*STARTING OF HEADER CODE*/
+    * {
+      box-sizing: border-box;
+    }
+
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    [class*="col-"] {
+      float: left;
+      padding: 15px;
+    }
+
+    html {
+      font-family: "Lucida Sans", sans-serif;
+    }
+
+    .header {
+      background-color: #ffc107;
+      color: #ffffff;
+      box-shadow: #999;
+      padding-bottom: -20px;
+      border-end-end-radius: 10px;
+      border-end-start-radius: 10px;
+    }
+
+    /*ENDING OF HEADER CODE*/
+
+    /*STARTING OF FOOTER CODE*/
+    *,
+    *:before,
+    *:after {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: poppins;
+      margin: 0;
+      display: grid;
+      font-size: 14px;
+    }
+
+    header p {
+      padding: 50px;
+      text-align: center;
+      color: #bebebe;
+      text-transform: uppercase;
+      font-size: 65px;
+      font-weight: 700;
+    }
+
+    .footer {
+      display: flex;
+      flex-flow: row wrap;
+      padding: 50px;
+      color: #fff;
+      background-color: #FF6700;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+
+    .footer>* {
+      flex: 1 100%;
+    }
+
+    .l-footer {
+      margin-right: 1.25em;
+      margin-bottom: 2em;
+    }
+
+    h2 {
+      font-weight: 400;
+      font-size: 15px;
+    }
+
+    .footer ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .footer li {
+      line-height: 2em;
+    }
+
+    .footer a {
+      text-decoration: none;
+    }
+
+    .r-footer {
+      display: flex;
+      flex-flow: row wrap;
+    }
+
+    .r-footer>* {
+      flex: 1 50%;
+      margin-right: 1.25em;
+    }
+
+    .box a {
+      color: #999;
+    }
+
+    .h-box {
+      column-count: 2;
+      column-gap: 1.25em;
+    }
+
+    .b-footer {
+      text-align: center;
+      color: #999;
+      padding-top: 50px;
+    }
+
+    .l-footer p {
+      padding-right: 20%;
+      color: #999;
+    }
+
+    @media screen and (min-width: 600px) {
+      .r-footer>* {
+        flex: 1;
+      }
+
+      .features {
+        flex-grow: 2;
+      }
+
+      .l-footer {
+        flex: 1 0px;
+      }
+
+      .r-footer {
+        flex: 2 0px;
+      }
+    }
+
+    /*ENDING OF FOOTER CODE*/
+
+    /*SCREEN ADJUSTMENT SETTINGS START*/
+
+    /* FOR MOBILE PHONES */
+    [class*="col-"] {
+      width: 100%;
+    }
+
+    @media only screen and (min-width: 600px) {
+
+      /* FOR TABLETS */
+      .col-s-1 {
+        width: 8.33%;
+      }
+
+      .col-s-2 {
+        width: 16.66%;
+      }
+
+      .col-s-3 {
+        width: 25%;
+      }
+
+      .col-s-4 {
+        width: 33.33%;
+      }
+
+      .col-s-5 {
+        width: 41.66%;
+      }
+
+      .col-s-6 {
+        width: 50%;
+      }
+
+      .col-s-7 {
+        width: 58.33%;
+      }
+
+      .col-s-8 {
+        width: 66.66%;
+      }
+
+      .col-s-9 {
+        width: 75%;
+      }
+
+      .col-s-10 {
+        width: 83.33%;
+      }
+
+      .col-s-11 {
+        width: 91.66%;
+      }
+
+      .col-s-12 {
+        width: 100%;
+      }
+    }
+
+    @media only screen and (min-width: 768px) {
+
+      /* FOR DESKTOP/LAPTOP */
+      .col-1 {
+        width: 8.33%;
+      }
+
+      .col-2 {
+        width: 16.66%;
+      }
+
+      .col-3 {
+        width: 25%;
+      }
+
+      .col-4 {
+        width: 33.33%;
+      }
+
+      .col-5 {
+        width: 41.66%;
+      }
+
+      .col-6 {
+        width: 50%;
+      }
+
+      .col-7 {
+        width: 58.33%;
+      }
+
+      .col-8 {
+        width: 66.66%;
+      }
+
+      .col-9 {
+        width: 75%;
+      }
+
+      .col-10 {
+        width: 83.33%;
+      }
+
+      .col-11 {
+        width: 91.66%;
+      }
+
+      .col-12 {
+        width: 100%;
+      }
+    }
+
+    /*SCREEN ADJUSTMENT SETTINGS END*/
+
+    /*ARTICLE CSS CODING START*/
+    .articlebox {
+      margin: 0;
+      padding-top: 0px;
+      background-color: #FFE338;
+     /* border-radius: 10px*/
+    }
+
+    .articlebox>.heading,
+    .articlecontent {
+      margin: 10px;
+      padding: 5px;
+    }
+
+    .articlecontent {
+
+      background: white;
+      border-radius: 10px;
+    }
+
+    .articlecontent>.articlecontentheading {
+      margin: 4px;
+      font-size: 90%;
+      text-align: center;
+    }
+
+    .articlecontent>.articleparagraph {
+      margin: 4px;
+      font-size: 90%;
+    }
+
+    .articlecontent>.articleimage {
+      border-radius: 8px;
+      border: 1px solid #ddd;
+      padding: 5px;
+      width: 150px;
+      height: 150px;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+
+    /*ARTICLE CSS CODING END*/
+
+    /*LIKE AND DISLIKE BUTTON CODING START*/
+
+    .fa {
+      font-size: 50px;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .fa :hover {
+      color: green;
+    }
+
+    /*LIKE AND DISLIKE BUTTON CODING END*/
+
+
+    /*HAMBURGER SIDEBAR CODE START*/
+    .sidebar {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #ffc107;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+      font-family: "Lato", sans-serif;
+    }
+
+    .sidebar a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+    }
+
+    .sidebar a:hover {
+      color: #f1f1f1;
+    }
+
+    .sidebar .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+
+    .openbtn {
+      font-size: 20px;
+      cursor: pointer;
+      background-color: #ffc107;
+      color: white;
+      padding: 0px 15px;
+      border: none;
+      font-size: 40px;
+    }
+
+    .openbtn:hover {
+      background-color: #FFE338;
+    }
+
+    #main {
+      transition: margin-left .5s;
+      padding: 16px;
+    }
+
+    /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+    @media screen and (max-height: 450px) {
+      .sidebar {
+        padding-top: 15px;
+      }
+
+      .sidebar a {
+        font-size: 18px;
+      }
+    }
+
+    /*HAMBURGER SIDEBAR CODE END*/
+
+    /*HEADHEADING CSS CODE START*/
+
+    .headheading {
+      text-align: center;
+      font-family: Arial;
+      margin-top: -52px;
+    }
+
+    /*HEADHEADING CSS CODE END*/
+
+    /*FIRST HEADING CSS CODE START*/
+    .firstheading {
+      background-color: coral;
+      text-align: center;
+      padding: 10px;
+      border-radius: 10px;
+      font-family: arial;
+      font-size: 40;
+      max-width: unset;
+    }
+
+    /*FIRST HEADING CSS CODE START*/
+
+    /*SECOND HEADING CSS CODE START*/
+    .secondheading {
+      background-color: lightblue;
+      text-align: center;
+      padding: 10px;
+      border-radius: 10px;
+      font-family: arial;
+    }
+
+    /*SECOND HEADING CSS CODE END*/
